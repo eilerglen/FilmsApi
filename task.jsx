@@ -28,7 +28,7 @@ class App extends React.Component {
 
   componentDidMount() {
       this.getFilms()
-    // Ваш код здесь
+   
   }
 
   getFilms = () => {
@@ -36,7 +36,7 @@ class App extends React.Component {
       .then(res => res.json())
       .then(data => this.setState({ data: data, isloading: false }))
       .catch(e => this.setState({ ...this.state, isloading: false, hasError: true }))
-    // Ваш код здесь
+    
   };
 
   render() {
